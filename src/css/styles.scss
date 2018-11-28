@@ -1,0 +1,32 @@
+/* vars */
+$root: "../assets/";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 80vw;
+}
+
+.app-header {
+  background-color: #fff;
+  height: 55px;
+  box-shadow: 0px 1px 0px 0px #e5e5e5;
+}
+
+.app-footer {
+  background-color: #ddd;
+  min-height: 60px;
+}
+
+.app-body {
+}
+
+/* header */
+.logo {
+  display: block;
+  width: 41px;
+  height: 41px;
+  background: url($root+"flamer-logo.svg");
+  background-size: cover;
+  margin: 7px 0 7px 20px;
+}
