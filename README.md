@@ -12,7 +12,7 @@ cd flamer
 npm start
 ```
 
-[https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
+source: [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 
 ## Redux
 
@@ -23,7 +23,7 @@ npm install --save redux
 npm install --save react-redux
 ```
 
-[https://github.com/reduxjs/redux](https://github.com/reduxjs/redux)
+source: [https://github.com/reduxjs/redux](https://github.com/reduxjs/redux)
 
 ## React Router DOM
 
@@ -33,7 +33,7 @@ Declarative routing for React
 npm install react-router-dom
 ```
 
-[https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
+source: [https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
 
 ## Sass
 
@@ -43,7 +43,7 @@ Pre-processed CSS
 npm install -g sass
 ```
 
-[https://sass-lang.com/guide](https://sass-lang.com/guide)
+source: [https://sass-lang.com/guide](https://sass-lang.com/guide)
 
 ## npm-run-all
 
@@ -67,8 +67,10 @@ Edit the `package.json` scripts section to look like this:
 }
 ```
 
-[https://github.com/mysticatea/npm-run-all](https://github.com/mysticatea/npm-run-all)
+source: [https://github.com/mysticatea/npm-run-all](https://github.com/mysticatea/npm-run-all)
 
 ## React Developer Tools
 
-[Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+Download: [Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+:+1: Let's get to work @qteam.
