@@ -1,16 +1,16 @@
 This is a blank React App with Router, Redux and Sass setup.
 
-## Setup
+# Setup
 
 In the project directory, you can run:
 
-# React
+## React
 
 `npm init react-app my-app cd my-app npm start`
 
 [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 
-# Redux
+## Redux
 
 State container
 
@@ -18,7 +18,7 @@ State container
 
 [https://github.com/reduxjs/redux](https://github.com/reduxjs/redux)
 
-# React Router DOM
+## React Router DOM
 
 Declarative routing for React
 
@@ -26,7 +26,7 @@ Declarative routing for React
 
 [https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
 
-# Sass
+## Sass
 
 Pre-processed CSS
 
@@ -34,17 +34,28 @@ Pre-processed CSS
 
 [https://sass-lang.com/guide](https://sass-lang.com/guide)
 
-# npm-run-all
+## npm-run-all
 
 A CLI tool to run multiple npm-scripts
 
 `npm install —save npm-run-all`
 
-Edit the package.json scripts section to look like this:
-`”scripts": { "watch-css": "sass --watch ./src/css/styles.scss ./src/css/styles.css", "build-css": "sass ./src/css/styles.scss ./src/css/styles.css", "start-js": "react-scripts start", "start": "npm-run-all -p watch-css start-js", "build": "npm-run-all build-css && react-scripts build", "test": "react-scripts test", "eject": "react-scripts eject" }`
+Edit the `package.json` scripts section to look like this:
+
+```
+”scripts":{
+  "watch-css": "sass --watch ./src/css/styles.scss ./src/css/styles.css",
+  "build-css": "sass ./src/css/styles.scss ./src/css/styles.css",
+  "start-js": "react-scripts start",
+  "start": "npm-run-all -p watch-css start-js",
+  "build": "npm-run-all build-css && react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+}
+```
 
 [https://github.com/mysticatea/npm-run-all](https://github.com/mysticatea/npm-run-all)
 
-# React Developer Tools
+## React Developer Tools
 
 [Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
