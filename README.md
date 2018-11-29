@@ -6,7 +6,11 @@ In the project directory, you can run:
 
 ## React
 
-`npm init react-app my-app cd my-app npm start`
+```
+npm init react-app flamer
+cd flamer
+npm start
+```
 
 [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 
@@ -14,7 +18,10 @@ In the project directory, you can run:
 
 State container
 
-`npm install --save redux npm install --save react-redux`
+```
+npm install --save redux
+npm install --save react-redux
+```
 
 [https://github.com/reduxjs/redux](https://github.com/reduxjs/redux)
 
@@ -22,7 +29,9 @@ State container
 
 Declarative routing for React
 
-`npm install react-router-dom`
+```
+npm install react-router-dom
+```
 
 [https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
 
@@ -30,7 +39,9 @@ Declarative routing for React
 
 Pre-processed CSS
 
-`npm install -g sass`
+```
+npm install -g sass
+```
 
 [https://sass-lang.com/guide](https://sass-lang.com/guide)
 
@@ -38,7 +49,9 @@ Pre-processed CSS
 
 A CLI tool to run multiple npm-scripts
 
-`npm install —save npm-run-all`
+```
+npm install —save npm-run-all
+```
 
 Edit the `package.json` scripts section to look like this:
 
