@@ -4,7 +4,7 @@ This is a blank React App with Router, Redux and Sass setup.
 
 # Setup
 
-In the project directory, you can run:
+In the projects directory, you can run:
 
 ## React
 
