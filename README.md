@@ -1,44 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a blank React App with Router, Redux and Sass setup.
 
-## Available Scripts
+## Setup
 
 In the project directory, you can run:
 
-### `npm start`
+# React
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm init react-app my-app cd my-app npm start`
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+[https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
 
-### `npm test`
+# Redux
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+State container
 
-### `npm run build`
+`npm install --save redux npm install --save react-redux`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[https://github.com/reduxjs/redux](https://github.com/reduxjs/redux)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# React Router DOM
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Declarative routing for React
 
-### `npm run eject`
+`npm install react-router-dom`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Sass
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Pre-processed CSS
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm install -g sass`
 
-## Learn More
+[https://sass-lang.com/guide](https://sass-lang.com/guide)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# npm-run-all
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A CLI tool to run multiple npm-scripts
+
+`npm install —save npm-run-all`
+
+Edit the package.json scripts section to look like this:
+`”scripts": { "watch-css": "sass --watch ./src/css/styles.scss ./src/css/styles.css", "build-css": "sass ./src/css/styles.scss ./src/css/styles.css", "start-js": "react-scripts start", "start": "npm-run-all -p watch-css start-js", "build": "npm-run-all build-css && react-scripts build", "test": "react-scripts test", "eject": "react-scripts eject" }`
+
+[https://github.com/mysticatea/npm-run-all](https://github.com/mysticatea/npm-run-all)
+
+# React Developer Tools
+
+[Chrome Extension](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)

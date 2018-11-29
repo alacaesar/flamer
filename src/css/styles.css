@@ -2,18 +2,25 @@
 .app {
   display: flex;
   flex-direction: column;
-  height: 80vw;
 }
 
 .app-header {
   background-color: #fff;
   height: 55px;
   box-shadow: 0px 1px 0px 0px #e5e5e5;
+  display: flex;
 }
 
 .app-footer {
-  background-color: #ddd;
-  min-height: 60px;
+  background-color: #fff;
+  height: 55px;
+  box-shadow: 0px -1px 0px 0px #e5e5e5;
+  display: flex;
+}
+
+.app-body {
+  min-height: 500px;
+  padding: 20px;
 }
 
 /* header */
@@ -24,6 +31,14 @@
   background: url("../assets/flamer-logo.svg");
   background-size: cover;
   margin: 7px 0 7px 20px;
+  text-indent: 100px;
+  overflow: hidden;
+}
+
+.app-header ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */
