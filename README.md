@@ -1,3 +1,5 @@
+[Flamer logo](https://github.com/alacaesar/flamer/blob/master/src/assets/logo.png)
+
 This is a blank React App with Router, Redux and Sass setup.
 
 # Setup
