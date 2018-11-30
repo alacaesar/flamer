@@ -1,10 +1,10 @@
-[Flamer logo](https://github.com/alacaesar/flamer/blob/master/src/assets/logo.png)
+![Flamer logo](https://github.com/alacaesar/flamer/blob/master/src/assets/logo.png)
 
 This is a blank React App with Router, Redux and Sass setup.
 
 # Setup
 
-In the project directory, you can run:
+In the projects directory, you can run:
 
 ## React
 
