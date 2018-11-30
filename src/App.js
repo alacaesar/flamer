@@ -18,16 +18,6 @@ class App extends Component {
         <Router>
           <Layout>
             <Switch>
-              <Redirect
-                path="nanay"
-                push
-                from="/proj"
-                to={{
-                  pathname: "/nanay.html",
-                  search: "utm=your+face",
-                  state: { referrer: "kdahks" }
-                }}
-              />
               <Route exact path="/" component={Home} />
               <Route path="/projects" component={Projects} />
               <Route path="/billing" component={Billing} />
