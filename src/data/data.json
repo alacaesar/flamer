@@ -1,0 +1,80 @@
+{
+  "{title}|0": {
+    "type": "subfield",
+    "data_type": "string",
+    "fields": {
+      "dropdown": { "def": "definer", "val": "capital", "addon": null },
+      "textbox": { "val": "urun.urnAd" }
+    }
+  },
+  "{description}|0": {
+    "type": "subfield",
+    "data_type": "string",
+    "fields": {
+      "dropdown": { "def": "definer", "val": "is", "addon": null },
+      "textbox": { "val": "urun.urnAciklama" }
+    }
+  },
+  "{price}|0": {
+    "type": "subfield",
+    "data_type": "integer",
+    "fields": {
+      "dropdown": {
+        "def": "definer",
+        "val": "replace",
+        "addon": { "input_0": "TL", "input_1": "" }
+      },
+      "textbox": { "val": "urun.urnFiyat" }
+    }
+  },
+  "{images}|0": {
+    "type": "array",
+    "data_type": "array",
+    "fields": {
+      "label": {},
+      "dropdown": { "def": "looper", "val": "array", "addon": null },
+      "textbox": { "val": "urun.urnGorseller" }
+    }
+  },
+  "{images}.n.{path}|0": {
+    "type": "subfield",
+    "data_type": "string",
+    "fields": {
+      "dropdown": {
+        "def": "definer",
+        "val": "add_start",
+        "addon": { "input_0": "/" }
+      },
+      "textbox": { "val": "urun.urnGorselYol" }
+    }
+  },
+  "{color}|0": {
+    "type": "array",
+    "data_type": "array",
+    "fields": {
+      "label": {},
+      "dropdown": { "def": "looper", "val": "array", "addon": null },
+      "textbox": { "val": "urun.urnRenkler" }
+    }
+  },
+  "{color}.n.{code}|0": {
+    "type": "subfield",
+    "data_type": "string",
+    "fields": {
+      "dropdown": {
+        "def": "definer",
+        "val": "replace",
+        "addon": { "input_0": "HEX", "input_1": "#" }
+      },
+      "textbox": { "val": "urun.urnRenkKod" }
+    }
+  },
+  "{color}.n.{title}|0": {
+    "type": "subfield",
+    "data_type": "string",
+    "fields": {
+      "dropdown": { "def": "definer", "val": "capital", "addon": null },
+      "textbox": { "val": "urun.urnRenkAd" }
+    }
+  }
+}

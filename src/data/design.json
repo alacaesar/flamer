@@ -1,0 +1,48 @@
+{
+  "name": { "title": "name", "attribute": { "data_type": "string" } },
+  "barcode": { "title": "barcode", "attribute": { "data_type": "string" } },
+  "price": { "title": "price", "attribute": { "data_type": "integer" } },
+  "brand_id": { "title": "brand_id", "attribute": { "data_type": "string" } },
+  "category_id": {
+    "title": "category_id",
+    "attribute": { "data_type": "string" }
+  },
+  "currency": { "title": "currency", "attribute": { "data_type": "string" } },
+  "sizes": {
+    "title": "sizes",
+    "attribute": { "data_type": "array" },
+    "lower": {
+      "title": { "title": "title", "attribute": { "data_type": "string" } },
+      "size_code": {
+        "title": "size_code",
+        "attribute": { "data_type": "string" }
+      },
+      "short": { "title": "short", "attribute": { "data_type": "string" } }
+    }
+  },
+  "colors": {
+    "title": "colors",
+    "attribute": { "data_type": "array" },
+    "lower": {
+      "title": {
+        "title": "title",
+        "attribute": { "data_type": "array" },
+        "lower": {
+          "short_title": {
+            "title": "short_title",
+            "attribute": { "data_type": "string" }
+          },
+          "long_title": {
+            "title": "long_title",
+            "attribute": { "data_type": "string" }
+          }
+        }
+      },
+      "color_code": {
+        "title": "color_code",
+        "attribute": { "data_type": "string" }
+      },
+      "image": { "title": "image", "attribute": { "data_type": "string" } }
+    }
+  }
+}

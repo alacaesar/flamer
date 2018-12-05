@@ -1,12 +1,7 @@
 import React, { Component } from "react";
 import { Layout } from "./app/components";
 import { Home, Projects, Billing } from "./app/views";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Redirect
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./app/reducers/store";
 import "./css/styles.css";

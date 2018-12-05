@@ -7,7 +7,9 @@ import {
 } from "react-sortable-hoc";
 
 const SortableItem = SortableElement(({ value }) => (
-  <li className="draggable">{value}</li>
+  <li className="draggable">
+    {value.title}:{value.n}
+  </li>
 ));
 
 const SortableList = SortableContainer(({ items }) => {
@@ -37,6 +39,33 @@ class Main extends Component {
       "Item 12"
     ]
   };
+
+  componentDidMount() {
+    var result = require("../../data/design.json");
+
+    this._loop(result);
+
+    this.setState({
+      items: this._array
+    });
+  }
+
+  _array = [];
+
+  _loop = (obj, level = 0) => {
+    var n = 1;
+    n += level;
+    for (var key in obj) {
+      var value = obj[key];
+      if (typeof value === "object") {
+        if (key !== "attribute") this._loop(value, n);
+      } else {
+        obj.n = n / 2;
+        this._array.push(obj);
+      }
+    }
+  };
+
   onSortEnd = ({ oldIndex, newIndex }) => {
     this.setState({
       items: arrayMove(this.state.items, oldIndex, newIndex)
