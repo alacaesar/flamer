@@ -6,17 +6,54 @@ import {
   arrayMove
 } from "react-sortable-hoc";
 
-const SortableItem = SortableElement(({ value }) => (
-  <li className="draggable">
-    {value.title}:{value.n}
-  </li>
-));
+const SortableItem = SortableElement(({ value }) => {
+  let options = [
+    { title: "Select", value: "0" },
+    { title: "String", value: "string" },
+    { title: "Array", value: "array" },
+    { title: "Integer", value: "integer" },
+    { title: "Boolean", value: "boolean" }
+  ];
+  let margin = (value.n - 1) * 30;
+
+  return (
+    <li style={{ marginLeft: margin + "px" }} className="draggable">
+      {value.title}
+      {SelectBox(options, value.attribute.data_type)}
+      <i
+        style={{ color: "#4069FE", fontSize: 12 }}
+        className="iconoo-plusCircle"
+      />
+      <i
+        style={{ color: "#d8d8d8", fontSize: 14, transform: "rotate(90deg)" }}
+        className="iconoo-ellipsis"
+      />
+    </li>
+  );
+});
+
+const SelectBox = (options, selected) => {
+  return (
+    <select defaultValue={selected}>
+      {options.map((item, index) => (
+        <option key={`item-${index}`} value={item.value}>
+          {item.title}
+        </option>
+      ))}
+    </select>
+  );
+};
 
 const SortableList = SortableContainer(({ items }) => {
   return (
     <ul>
       {items.map((value, index) => (
-        <SortableItem key={`item-${index}`} index={index} value={value} />
+        <SortableItem
+          disabled={true}
+          key={`item-${index}`}
+          index={index}
+          value={value}
+        />
       ))}
     </ul>
   );
@@ -24,20 +61,7 @@ const SortableList = SortableContainer(({ items }) => {
 
 class Main extends Component {
   state = {
-    items: [
-      "Item 1",
-      "Item 2",
-      "Item 3",
-      "Item 4",
-      "Item 5",
-      "Item 6",
-      "Item 7",
-      "Item 8",
-      "Item 9",
-      "Item 10",
-      "Item 11",
-      "Item 12"
-    ]
+    items: []
   };
 
   componentDidMount() {

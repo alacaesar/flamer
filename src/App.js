@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./app/reducers/store";
 import "./css/styles.css";
+import "./css/iconoo.min.css";
 
 class App extends Component {
   render() {
