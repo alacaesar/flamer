@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>icons</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/down" fill="#2A3147">
+            <polygon id="Rectangle-2" transform="translate(16.500000, 15.500000) rotate(45.000000) translate(-16.500000, -15.500000) " points="13 17 18 17 18 12 20 12 20 19 13 19"></polygon>
+        </g>
+        <g id="icon/drag" transform="translate(32.000000, 0.000000)" fill="#D8D8D8">
+            <path d="M13,9 L19,9 L19,11 L13,11 L13,9 Z M13,13 L19,13 L19,15 L13,15 L13,13 Z M13,17 L19,17 L19,19 L13,19 L13,17 Z M13,21 L19,21 L19,23 L13,23 L13,21 Z" id="Combined-Shape"></path>
+        </g>
+        <g id="icon/drag-copy" transform="translate(64.000000, 0.000000)" fill="#4069FE">
+            <path d="M16.5,26 C11.2532949,26 7,21.7467051 7,16.5 C7,11.2532949 11.2532949,7 16.5,7 C21.7467051,7 26,11.2532949 26,16.5 C26,21.7467051 21.7467051,26 16.5,26 Z M16.5,25 C21.1944204,25 25,21.1944204 25,16.5 C25,11.8055796 21.1944204,8 16.5,8 C11.8055796,8 8,11.8055796 8,16.5 C8,21.1944204 11.8055796,25 16.5,25 Z M12,16 L16,16 L16,12 L17,12 L17,16 L21,16 L21,17 L17,17 L17,21.3269043 L16,21.3269043 L16,17 L12,17 L12,16 Z" id="Oval-2"></path>
+        </g>
+        <g id="icon/drag-copy-2" transform="translate(96.000000, 0.000000)">
+            <rect id="Rectangle-8" fill="#D8D8D8" x="6" y="6" width="20" height="20" rx="3"></rect>
+            <polygon id="Rectangle-2" fill="#FFFFFF" points="11 15 15 15 15 11 17 11 17 15 21 15 21 17 17 17 17 21.3269043 15 21.3269043 15 17 11 17"></polygon>
+        </g>
+        <g id="icon/drag-copy-3" transform="translate(128.000000, 0.000000)" fill="#D8D8D8">
+            <path d="M21.5,20.5 L21.5,16.5 L17.5,16.5 L22.5,10.5 L27.5,16.5 L23.5,16.5 L23.5,20.5 C23.5,21.0522847 23.0522847,21.5 22.5,21.5 L22.5,21.5 C21.9477153,21.5 21.5,21.0522847 21.5,20.5 Z" id="Rectangle-2" transform="translate(22.500000, 16.000000) rotate(90.000000) translate(-22.500000, -16.000000) "></path>
+            <rect id="Rectangle" x="13" y="15" width="2" height="2" rx="1"></rect>
+            <rect id="Rectangle" x="9" y="15" width="2" height="2" rx="1"></rect>
+            <rect id="Rectangle" x="5" y="15" width="2" height="2" rx="1"></rect>
+        </g>
+        <g id="icon/drag-copy-4" transform="translate(160.000000, 0.000000)" fill="#4069FE">
+            <path d="M16.5,26 C11.2532949,26 7,21.7467051 7,16.5 C7,11.2532949 11.2532949,7 16.5,7 C21.7467051,7 26,11.2532949 26,16.5 C26,21.7467051 21.7467051,26 16.5,26 Z M16.5,25 C21.1944204,25 25,21.1944204 25,16.5 C25,11.8055796 21.1944204,8 16.5,8 C11.8055796,8 8,11.8055796 8,16.5 C8,21.1944204 11.8055796,25 16.5,25 Z M12,16 L21,16 L21,17 L12,17 L12,16 Z" id="Oval-2"></path>
+        </g>
+        <g id="icon/search" transform="translate(192.000000, 0.000000)" fill="#90949F">
+            <path d="M19.5590191,18.9008552 L23.3848547,22.345653 L22.7157241,23.0887979 L18.8465489,19.6049769 C17.8050958,20.4758395 16.46376,21 15,21 C11.6862915,21 9,18.3137085 9,15 C9,11.6862915 11.6862915,9 15,9 C18.3137085,9 21,11.6862915 21,15 C21,16.4893316 20.4573656,17.8519241 19.5590191,18.9008552 Z M15,20 C17.7614237,20 20,17.7614237 20,15 C20,12.2385763 17.7614237,10 15,10 C12.2385763,10 10,12.2385763 10,15 C10,17.7614237 12.2385763,20 15,20 Z" id="Oval-2"></path>
+        </g>
+        <g id="icon/three-dots" transform="translate(224.000000, 0.000000)" fill="#D8D8D8">
+            <path d="M16.5,13 C15.6715729,13 15,12.3284271 15,11.5 C15,10.6715729 15.6715729,10 16.5,10 C17.3284271,10 18,10.6715729 18,11.5 C18,12.3284271 17.3284271,13 16.5,13 Z M16.5,18 C15.6715729,18 15,17.3284271 15,16.5 C15,15.6715729 15.6715729,15 16.5,15 C17.3284271,15 18,15.6715729 18,16.5 C18,17.3284271 17.3284271,18 16.5,18 Z M16.5,23 C15.6715729,23 15,22.3284271 15,21.5 C15,20.6715729 15.6715729,20 16.5,20 C17.3284271,20 18,20.6715729 18,21.5 C18,22.3284271 17.3284271,23 16.5,23 Z" id="Combined-Shape" transform="translate(16.500000, 16.500000) rotate(90.000000) translate(-16.500000, -16.500000) "></path>
+        </g>
+        <g id="icon/three-dots-copy" transform="translate(0.000000, 32.000000)" fill="#90949F">
+            <rect id="Combined-Shape" x="11" y="15" width="10" height="2"></rect>
+        </g>
+        <g id="icon/three-dots-copy-2" transform="translate(32.000000, 32.000000)" fill="#90949F">
+            <rect id="Combined-Shape" x="5" y="15" width="22" height="2"></rect>
+            <rect id="Combined-Shape" x="5" y="9" width="22" height="2"></rect>
+            <rect id="Combined-Shape" x="5" y="21" width="22" height="2"></rect>
+        </g>
+        <g id="icon/down-copy" transform="translate(64.000000, 32.000000)" fill="#D8D8D8">
+            <polygon id="Triangle-2" transform="translate(16.000000, 17.000000) scale(1, -1) translate(-16.000000, -17.000000) " points="16 13 21 21 11 21"></polygon>
+        </g>
+        <g id="icon/down-copy-2" transform="translate(96.000000, 32.000000)" fill="#90949F">
+            <path d="M10,8 L20,8 L20,20 L10,20 L10,8 Z M12,10 L18,10 L18,18 L12,18 L12,10 Z M12,21 L14,21 L14,22 L21,22 L21,11 L23,11 L23,24 L12,24 L12,21 Z" id="Rectangle"></path>
+        </g>
+        <g id="icon/three-dots-copy-4" transform="translate(128.000000, 32.000000)" fill="#90949F">
+            <rect id="Combined-Shape" transform="translate(16.000000, 16.500000) rotate(45.000000) translate(-16.000000, -16.500000) " x="8" y="16" width="16" height="1"></rect>
+            <rect id="Combined-Shape" transform="translate(16.010408, 16.010408) rotate(-45.000000) translate(-16.010408, -16.010408) " x="8.01040764" y="15.5104076" width="16" height="1"></rect>
+        </g>
+    </g>
+</svg>

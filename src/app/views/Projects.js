@@ -1,54 +1,14 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import {
-  SortableContainer,
-  SortableElement,
-  arrayMove
-} from "react-sortable-hoc";
+import { SortableContainer, arrayMove } from "react-sortable-hoc";
 
-const SortableItem = SortableElement(({ value }) => {
-  let options = [
-    { title: "Select", value: "0" },
-    { title: "String", value: "string" },
-    { title: "Array", value: "array" },
-    { title: "Integer", value: "integer" },
-    { title: "Boolean", value: "boolean" }
-  ];
-  let margin = (value.n - 1) * 30;
-
-  return (
-    <li style={{ marginLeft: margin + "px" }} className="draggable">
-      {value.title}
-      {SelectBox(options, value.attribute.data_type)}
-      <i
-        style={{ color: "#4069FE", fontSize: 12 }}
-        className="iconoo-plusCircle"
-      />
-      <i
-        style={{ color: "#d8d8d8", fontSize: 14, transform: "rotate(90deg)" }}
-        className="iconoo-ellipsis"
-      />
-    </li>
-  );
-});
-
-const SelectBox = (options, selected) => {
-  return (
-    <select defaultValue={selected}>
-      {options.map((item, index) => (
-        <option key={`item-${index}`} value={item.value}>
-          {item.title}
-        </option>
-      ))}
-    </select>
-  );
-};
+import { Accordion, DesignItem } from "../components";
 
 const SortableList = SortableContainer(({ items }) => {
   return (
     <ul>
       {items.map((value, index) => (
-        <SortableItem
+        <DesignItem
           disabled={true}
           key={`item-${index}`}
           index={index}
@@ -67,6 +27,7 @@ class Main extends Component {
   componentDidMount() {
     var result = require("../../data/design.json");
 
+    this._array.push({ title: "Product", root: true });
     this._loop(result);
 
     this.setState({
@@ -96,7 +57,11 @@ class Main extends Component {
     });
   };
   render() {
-    return <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />;
+    return (
+      <Accordion head={<h4>Product</h4>}>
+        <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
+      </Accordion>
+    );
   }
 }
 
