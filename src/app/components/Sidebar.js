@@ -57,6 +57,7 @@ class Main extends Component {
   };
 
   _onSearchToggle = () => {
+    console.log("toggle");
     this.setState({
       search: !this.state.search,
       searchTerm: null
@@ -80,7 +81,12 @@ class Main extends Component {
 
     let _head = search ? (
       <div className="mini-search">
-        <input type="text" onChange={this._onSearchTerm.bind(this)} autoFocus />
+        <input
+          type="text"
+          onChange={this._onSearchTerm.bind(this)}
+          autoFocus
+          onBlur={this._onSearchToggle}
+        />
         <button onClick={this._onSearchToggle}>
           <i className="icon close" />
         </button>

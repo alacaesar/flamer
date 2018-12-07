@@ -95,11 +95,15 @@ $light-border: #e5e5e5;
   overflow: hidden;
 }
 
-.app-header {
+nav {
+  margin: 0 auto;
   ul li {
-    list-style: none;
     display: inline-block;
-    margin: 0 7px;
+    line-height: 55px;
+    margin: 0 10px;
+    a {
+      color: $light;
+    }
   }
 }
 

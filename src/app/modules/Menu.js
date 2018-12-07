@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class Main extends Component {
   render() {
     return (
-      <div>
+      <nav>
         <ul>
           <li>
             <Link to="/">Dashboard</Link>
@@ -16,7 +16,7 @@ class Main extends Component {
             <Link to="/billing/">Billing</Link>
           </li>
         </ul>
-      </div>
+      </nav>
     );
   }
 }
