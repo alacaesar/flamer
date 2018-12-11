@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { SortableContainer, arrayMove } from "react-sortable-hoc";
 
 import { Accordion, DesignItem } from "../components";
+import { Tabs } from "../modules";
 
 const SortableList = SortableContainer(({ items }) => {
   return (
@@ -58,9 +59,12 @@ class Main extends Component {
   };
   render() {
     return (
-      <Accordion head={<h4>Product</h4>}>
-        <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
-      </Accordion>
+      <div>
+        <Tabs />
+        <Accordion head={<h4>Product</h4>}>
+          <SortableList items={this.state.items} onSortEnd={this.onSortEnd} />
+        </Accordion>
+      </div>
     );
   }
 }

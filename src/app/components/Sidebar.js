@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 /* regex türlçe karekter problemine çözüm */
 const LOWERCASE = {
@@ -32,18 +34,17 @@ const LOWERCASE = {
 
 class Main extends Component {
   state = {
-    items: [],
     searchTerm: null,
     search: false
   };
 
   _filterItems = searchTerm => {
-    const { items } = this.state;
+    let { services } = this.props.project;
     const filteredItems = [];
-    items.forEach(item => {
+    services.forEach(item => {
       const parts = searchTerm.trim().split(/[ \-:]+/);
       const regex = new RegExp(LOWERCASE.get(`(${parts.join("|")})`), "ig");
-      if (regex.test(LOWERCASE.get(item))) {
+      if (regex.test(LOWERCASE.get(item.name))) {
         filteredItems.push(item);
       }
     });
@@ -64,19 +65,18 @@ class Main extends Component {
     });
   };
 
-  componentDidMount() {
-    this.setState({
-      items: ["Product", "Products List", "Homepage", "Feed"]
-    });
-  }
-
   render() {
-    let { items, searchTerm, search } = this.state;
+    let { searchTerm, search } = this.state;
+    let { services } = this.props.project;
     let _items = [];
-    let filteredItems = searchTerm ? this._filterItems(searchTerm) : items;
+    let filteredItems = searchTerm ? this._filterItems(searchTerm) : services;
 
     filteredItems.forEach((element, index) =>
-      _items.push(<li key={"p-" + index}>{element}</li>)
+      _items.push(
+        <li key={"p-" + index}>
+          <Link to={element.slug}>{element.name}</Link>
+        </li>
+      )
     );
 
     let _head = search ? (
@@ -116,4 +116,9 @@ class Main extends Component {
   }
 }
 
-export default Main;
+// filter state
+function mapStateToProps(state) {
+  return state.project;
+}
+
+export default connect(mapStateToProps)(Main);

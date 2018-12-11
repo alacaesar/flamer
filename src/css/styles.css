@@ -33,7 +33,7 @@
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 0 30px 30px;
   box-sizing: border-box;
   grid-area: body;
 }
@@ -70,10 +70,9 @@
 }
 .app-sidebar ul li {
   margin-bottom: 15px;
-  color: #90949f;
 }
-.app-sidebar ul li.selected {
-  color: #4069fe;
+.app-sidebar ul li a {
+  color: #90949f;
 }
 
 /* header */
@@ -98,6 +97,32 @@ nav ul li {
 }
 nav ul li a {
   color: #90949f;
+}
+
+.tabs {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.tabs ul {
+  display: inline-block;
+}
+.tabs ul li {
+  display: inline-block;
+}
+.tabs ul li.selected {
+  border-top: 4px solid #4069fe;
+}
+.tabs ul li.selected a {
+  color: #2a3147;
+}
+.tabs ul li a {
+  color: #90949f;
+  line-height: 55px;
+  display: block;
+  padding: 0 25px;
+}
+.tabs ul li a:hover {
+  color: #2a3147;
 }
 
 /* body */

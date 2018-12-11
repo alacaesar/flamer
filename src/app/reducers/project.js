@@ -1,40 +1,24 @@
 // project state
 
 const initialState = {
-  items: [
-    {
-      name: "Products",
-      type: "null",
-      children: [
-        {
-          name: "name",
-          type: "string"
-        },
-        {
-          name: "barcode",
-          type: "number"
-        },
-        {
-          name: "sizes",
-          type: "array",
-          children: [
-            {
-              name: "title",
-              type: "string"
-            },
-            {
-              name: "short-code",
-              type: "number"
-            }
-          ]
-        },
-        {
-          name: "price",
-          type: "number"
-        }
-      ]
+  project: {
+    name: "Spring Break",
+    services: [
+      { name: "Product", slug: "product" },
+      { name: "Products List", slug: "product-list" },
+      { name: "Feed", slug: "feed" },
+      { name: "Homepage", slug: "homepage" }
+    ],
+    service: {
+      slug: "product",
+      design: {
+        name: { title: "name", attribute: { data_type: "string" } },
+        barcode: { title: "barcode", attribute: { data_type: "string" } },
+        price: { title: "price", attribute: { data_type: "integer" } },
+        brand_id: { title: "brand_id", attribute: { data_type: "string" } }
+      }
     }
-  ]
+  }
 };
 
 export default function cart(state = initialState, action) {
